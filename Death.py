@@ -5,6 +5,6 @@ while True:
         try:
             foldername = os.listdir(filename)
             for file in foldername:
-                os.rename(f'{filename}\\{file}', str(random.random()))
+                os.rename('{}\\{}'.format(filename,file), str(random.random()))
         except NotADirectoryError:
             os.rename(filename, str(random.random()))
